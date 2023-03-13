@@ -579,5 +579,19 @@
       <accelerometerBiasCorrelationTime>300.0</accelerometerBiasCorrelationTime>
       <accelerometerTurnOnBiasSigma>0.196</accelerometerTurnOnBiasSigma>
     </plugin>
+    <plugin name='wind_plugin' filename='librosgazebo_wind_plugin.so'>
+      <frameId>base_link</frameId>
+      <linkName>base_link</linkName>
+      <robotNamespace>iris</robotNamespace>
+      <commandSubTopic>/wind_3d</commandSubTopic>
+      <xyzOffset>0 0 0</xyzOffset>
+      <windDirection>1 0 0</windDirection>
+      <windForceMax>4.000</windForceMax>
+      <windForceVariance>0</windForceVariance>
+      <windGustDirection>0 0 0</windGustDirection>
+      <windGustDuration>0</windGustDuration>
+      <windGustStart>0</windGustStart>
+      <windGustForceMean>0</windGustForceMean>
+    </plugin>
   </model>
 </sdf>
